@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Estrutura do nó da fila
 struct st_fila {
     int senha;
     struct st_fila* prox;
@@ -12,7 +11,6 @@ typedef struct st_fila Fila;
 Fila* inicio = NULL;
 Fila* fim = NULL;
 
-// Função para criar um novo nó na fila
 Fila* criarNo(int senha) {
     Fila* novo = (Fila*)malloc(sizeof(Fila));
     novo->senha = senha;
